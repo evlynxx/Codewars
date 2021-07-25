@@ -1,0 +1,30 @@
+# Link: https://www.codewars.com/kata/586430a5b3a675296a000395
+
+def insurance(age, size, num_of_days): 
+    sum=0
+    if num_of_days <0:
+        return sum
+    elif num_of_days >0:
+        if age <25:
+            sum+=(10*num_of_days)
+            if size=='economy':
+                sum+=0
+                sum+=(50*num_of_days)
+            elif size=='medium':
+                sum+=(10*num_of_days)
+                sum+=(50*num_of_days)
+            elif size!='economy' or size!='medium':
+                sum+=(15*num_of_days)
+                sum+=(50*num_of_days)
+        elif age >=25:
+            sum+=0
+            if size=='economy':
+                sum+=0
+                sum+=(50*num_of_days)
+            elif size=='medium':
+                sum+=(10*num_of_days)
+                sum+=(50*num_of_days)
+            elif size!='economy' or size!='medium':
+                sum+=(15*num_of_days)
+                sum+=(50*num_of_days)
+    return sum
