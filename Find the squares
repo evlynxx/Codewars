@@ -1,5 +1,7 @@
+
+# Link to the problem: https://www.codewars.com/kata/60908bc1d5811f0025474291
+
 def find_squares(num):
     i = (num-1)/2
     return f"{((i+1)**2):.0f}-{(i**2):.0f}"
 
-# Link to the problem: https://www.codewars.com/kata/60908bc1d5811f0025474291
