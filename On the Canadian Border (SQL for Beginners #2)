@@ -1,0 +1,5 @@
+# Link: https://www.codewars.com/kata/590ba881fe13cfdcc20001b4
+
+select name, country
+from travelers
+where country not in ('Canada','Mexico','USA')
