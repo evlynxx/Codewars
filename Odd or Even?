@@ -1,0 +1,6 @@
+def odd_or_even(arr):
+    sum=0
+    for i in range(len(arr)):
+        sum=sum+arr[i]
+    if sum%2==0: return 'even'
+    else: return 'odd'
