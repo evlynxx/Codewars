@@ -1,0 +1,7 @@
+# Link: https://www.codewars.com/kata/59cd155d1a68b70f8e000117
+
+def middle_me(N, X, Y): 
+    if N%2==0:
+        return(X.center(N+1, Y))
+    else:
+        return X
