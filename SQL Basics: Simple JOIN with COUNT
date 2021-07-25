@@ -1,0 +1,7 @@
+# Link: https://www.codewars.com/kata/580918e24a85b05ad000010c
+
+select p.ID, p.Name, count(t.ID) toy_count
+from people p
+left join toys t
+on p.ID=t.people_id
+group by p.ID,p.Name
